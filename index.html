@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Glass 3D Contact Form</title>
+  <link rel="stylesheet" href="CSS/form.css">
+</head>
+<body>
+
+<div class="card">
+  <h2>Contact Us</h2>
+
+  <input type="text" id="fname" placeholder="First Name">
+  <small class="error" id="fnameError"></small>
+
+  <input type="text" id="lname" placeholder="Last Name">
+  <small class="error" id="lnameError"></small>
+
+  <input type="email" id="email" placeholder="Email">
+  <small class="error" id="emailError"></small>
+
+  <input type="text" id="phone" placeholder="Phone Number">
+  <small class="error" id="phoneError"></small>
+
+  <input type="date" id="date">
+  <small class="error" id="dateError"></small>
+
+  <div class="gender">
+    <label><input type="radio" name="gender" value="Male"> Male</label>
+    <label><input type="radio" name="gender" value="Female"> Female</label>
+    <label><input type="radio" name="gender" value="Other"> Other</label>
+  </div>
+  <small class="error" id="genderError"></small>
+
+  <button type="button" onclick="validateForm()">Send Message</button>
+  <small class="success" id="successMsg"></small>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="Script/form.js"></script>
+
+</body>
+</html>
